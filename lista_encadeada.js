@@ -1,4 +1,4 @@
-// Classe que representa um nó da lista
+// classe que representa um nó da lista
 class Node {
     constructor(valor) {
       this.valor = valor;
@@ -6,13 +6,13 @@ class Node {
     }
   }
   
-  // Classe da lista encadeada
+  // classe da lista encadeada
   class ListaEncadeada {
     constructor() {
-      this.cabeca = null; // Primeiro nó da lista
+      this.cabeca = null; // primeiro nó da lista
     }
   
-    // Adiciona um novo número ao final da lista
+    // adiciona um novo número ao final da lista
     adicionar(valor) {
       const novoNo = new Node(valor);
   
@@ -27,7 +27,7 @@ class Node {
       }
     }
   
-    // Exibe os valores da lista
+    // exibe os valores da lista
     imprimir() {
       let atual = this.cabeca;
       while (atual) {
@@ -37,7 +37,7 @@ class Node {
     }
   }
   
-  // Exemplo de uso
+  // exemplo de uso
   const lista = new ListaEncadeada();
   
   lista.adicionar(10);
@@ -45,5 +45,5 @@ class Node {
   lista.adicionar(30);
   
   lista.imprimir();
-  // Saída: 10, 20, 30
+  // saída: 10, 20, 30
   
